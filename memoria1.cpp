@@ -7,7 +7,7 @@ int main() {
     pointvar = &var;
 
     cout << "var = " << var << endl;
-    cout << "dirección de la variable var = " << &var << endl << endl;
+    cout << "direcciÃ³n de la variable var = " << &var << endl << endl;
     cout << "apuntador pointvar = " << pointvar << endl << endl;
 
     cout << "Cambia el valor de var a 7:" << endl << endl;
