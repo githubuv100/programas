@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Dispositivos de E/S - Cámara</title> 
+<link rel="icon" href="data:;base64,iVBORw0KGgo=" /> 
+<link rel="stylesheet" href="camara.css">
+
+</head>
+
+ <body> <script src="camara.js">
+</script>
+ <script> 
+// Función para inicializar la cámara
+ function initCamera() {
+ // ... (tu código actual para inicializar la cámara) }
+
+ // Función para tomar una foto
+ function takePhoto() {
+ // ... (tu código actual para tomar la foto) 
+} // Función que se ejecutará al cargar la página 
+function initializePage() { 
+document.getElementById('iniciar-camara').addEventListener('click', initCamera); document.getElementById('clic-foto').addEventListener('click', takePhoto); }
+ // Llamar a la función de inicialización al cargar la página
+ window.addEventListener('load', initializePage);
+ </script>  
+
+<button id="iniciar-camara">Iniciar la cámara</button> 
+<video id="video" width="320" height="240" autoplay></video> 
+<button id="clic-foto">Tomar foto</button> 
+<div id="dataurl-container"> 
+<canvas id="canvas" width="320" height="240"></canvas>
+ <div id="dataurl-header">Data URL de la imagen</div> 
+<textarea id="dataurl" readonly></textarea> 
+</div> 
+</body> 
+</html> 
